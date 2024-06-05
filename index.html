@@ -11,6 +11,27 @@
         <li id="listaInstrumentos"></li>
     </ul>
     <script>
+        const guitarrasMaisCaras = [
+            "Fender ‘Reach Out To Asia’ Stratocaster – $2.7 milhões",
+            "Gibson Les Paul de 1959 de Keith Richards – $1 milhão",
+            "Fender Stratocaster de Eric Clapton – $959 mil",
+            "Washburn 22 de Bob Marley – $1.2 milhões",
+            "Gibson SG de George Harrison e John Lennon – $570 mil",
+            "Fender ‘Blackie’ Stratocaster de Eric Clapton – $959 mil",
+            "Fender Telecaster de Bob Dylan – $1 milhão",
+            "Gibson Les Paul ‘Goldtop’ de 1954 de Peter Green e Gary Moore – $2 milhões",
+            "Fender Stratocaster de Jimi Hendrix – $2 milhões",
+            "Fender ‘Brownie’ Stratocaster de Eric Clapton – $450 mil"
+        ];
+
+        const listaInstrumentos = document.getElementById('listaInstrumentos');
+
+        guitarrasMaisCaras.forEach (guitarra => {
+            const nomeGuitarra = document.createElement ('li');
+            nomeGuitarra.textContent = guitarra;
+            listaInstrumentos.appendChild (nomeGuitarra);
+            
+        })
 
     </script>
 </body>
